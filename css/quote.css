@@ -1,0 +1,78 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+.body{
+        background-image: url(Untitled-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+background-size: 100% 100%;
+    }
+
+.head{
+    top: 3%;
+    background: linear-gradient( #FFFF00 , #FB5F00 );
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    font-family: 'Exo',sans-serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+blockquote{
+  font-size: 1.2em;
+  width:50%;
+  margin:10px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid orange ;
+  line-height:1;
+  position: relative;
+  background:white;
+  font
+}
+
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:orange;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+.quote1, .quote3
+{
+  float:left;
+  display: inline-block;
+}
+.quote2
+{
+  float:right;
+  display: inline-block;
+}
+@media screen and (max-width:480px) and (orientation: portrait) {
+  .overlay nav{
+    font-size: 30px;
+  }
+  .body{
+    background-size: cover;
+  }
+  blockquote{
+    font-size: 0.8rem;
+  }
+}
